@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    margin: 0px;
+
+}
+
+.maincontent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    border: 2px solid white;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    box-shadow: 0px 19px 51px -19px #000000;
+    -webkit-box-shadow: 0px 19px 51px -19px #000000;
+    -moz-box-shadow: 0px 19px 51px -19px #000000;
+    z-index: 1;
+
+
+}
+
+.navbar {
+    position: relative;
+    top: 35px;
+    left: 100px;
+
+
+}
+
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: black;
+    margin: 10px 5px;
+    font-weight: 300;
+}
+
+.navbar a {
+    transition: 0.3s;
+    padding: 5px 1px;
+    transition-timing-function: ease-in-out;
+
+}
+
+.navbar a:hover {
+    box-shadow: inset 100px 0 0 0 black;
+    color: white;
+    border-radius: 10px;
+
+}
+
+.authentication {
+    position: relative;
+    top: 35px;
+    width: 200px;
+    left: 10%;
+
+
+
+}
+
+
+.brandname {
+    margin-left: -100px;
+}
+
+
+.buttons {
+    position: relative;
+
+
+}
+
+.search_box {
+    width: 400px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 20px;
+    transition: 0.3s;
+    outline: none;
+
+}
+
+.search_box:focus {
+    outline: 2px solid black;
+
+    outline-offset: 5px;
+}
+
+.search_box::placeholder {
+    padding: 20px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.search_box[type="text"] {
+    font-size: 1.3rem;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+}
+
+#search {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+
+
+}
+
+
+
+.nextsection {
+    background-image: url("https://images.unsplash.com/photo-1505798577917-a65157d3320a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    z-index: -1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 1000px;
+    background-image: fixed;
+}
+
+.description1 {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 1000px;
+
+
+}
+
+.card {
+    margin: 50px;
+}
+
+button {
+    --primary-color: #f87f26;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    float: right;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 10px;
+}
+
+button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+}
+
+button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+}
+
+button:hover {
+    background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+    background: var(--secondary-color);
+}
+
+button:hover .arrow:before {
+    right: 0;
+}
+
+.city-select {
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.city-select:nth-of-type(1) {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding-left: 10px;
+
+}
+
+
+.card {
+    width: 300px;
+    height: 200px;
+    background-color: #FF3CAC;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.Electrician {
+    background-image: url("https://img.freepik.com/free-vector/electrician-concept-illustration_114360-2907.jpg?w=1380&t=st=1684796685~exp=1684797285~hmac=7abc093419f921f4cb661207493b27ea9b59a5f2900f92b95040ef5260d32d10");
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+}
+
+.Plumber {
+    background-image: url("https://img.freepik.com/free-vector/plumber-repairing-broken-leaking-sink-faucet-bathroom-flat-composition-vector-illustration_1284-67455.jpg?w=1380&t=st=1684796961~exp=1684797561~hmac=a0ed51061211134ac7c91c074f7bf77fa0c5c50b3f53e8592600ff70b25fe9c6");
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+}
+
+.carpenter {
+    background-image: url("https://img.freepik.com/free-vector/woodworker-concept-illustration_114360-3105.jpg?w=826&t=st=1684797177~exp=1684797777~hmac=d8d7884235d2d0728583394e5ca70a3a7bc231ee27a48dc64a4d9d704da0265c");
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+}
+
+.construction {
+    background-image: url("https://img.freepik.com/free-vector/professional-builders-making-brick-wall-site-helmet-constructor-flat-vector-illustration-construction-engineering_74855-8539.jpg?w=1380&t=st=1684797062~exp=1684797662~hmac=3765aa5770836949e9813724164c33f97d8dd55135e664d03d98298a7ca25e0e");
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+}
+
+.card-content {
+    padding: 20px;
+    position: relative;
+    bottom: 40px;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: 1;
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card .card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+
+.card .card-para {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.card-content {
+    transform: translateY(50%);
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card-content {
+    transform: translateY(0%);
+}
+
+
+
+.heading1 {
+    position: relative;
+    top: 1000px;
+    z-index: -1;
+}
+
+.description2 {
+
+    position: relative;
+    top: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-even;
+    align-items: center;
+    width: 100%;
+    height: 1600px;
+    z-index: -1;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 40px;
+
+
+}
+
+.content2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 40px;
+
+
+}
+
+.content3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 40px;
+
+
+}
+
+.content4 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 300px;
+    margin-bottom: 40px;
+
+
+}
+
+.content1-desc {
+    width: 37%;
+    height: 200px;
+}
+
+.divcontent {
+    margin-bottom: 300px;
+}
+
+.content4 img {
+    width: 280px;
+    height: 300px;
+}
